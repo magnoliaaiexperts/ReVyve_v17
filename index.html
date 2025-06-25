@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Optimization: Enhanced title with more keywords and benefits -->
+    <title>ReVyve Wellness Lounge: Luxury IV Therapy, Hormone Optimization & Anti-Aging in Lafayette, LA</title>
+    <!-- SEO Optimization: Refined meta description for keyword density and call-to-action -->
+    <meta name="description" content="Discover ReVyve Wellness Lounge in Lafayette, LA for premium IV therapy, personalized hormone optimization, advanced stem cell treatments, and innovative anti-aging solutions. Schedule your free wellness consult today to revitalize your health and life!">
+
+    <!-- Favicon Placement: Already optimized -->
+    <link rel="icon" type="image/png" href="https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/7704421702570386168-removebg-preview.png">
+    <link rel="apple-touch-icon" href="https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/7704421702570386168-removebg-preview.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Colors - Optimized for better light mode contrast */
+        :root {
+            /* Dark Mode Defaults */
+            --bg-primary: #121212; /* Deep Black */
+            --text-primary: #E0E0E0; /* Off-white for readability */
+            --text-secondary: #B0B0B0; /* Lighter grey for supporting text */
+            --nav-bg: #000000; /* Pure Black for nav */
+            --nav-border: #333333; /* Dark grey border */
+            --section-bg-alt: #1f1f1f; /* Slightly lighter black for alternate sections */
+            --modal-bg: #1f1f1f;
+            --modal-content-bg: #1a1a1a;
+            --input-bg: #2a2a2a;
+            --input-border: #444444;
+            --footer-bg: #000000;
+            --footer-border: #333333;
+            --overlay-opacity: 0.6; /* Overlay opacity for dark mode video */
+        }
+
+        /* Light Mode Overrides - Adjusted for maximum contrast and visual appeal */
+        body[data-theme='light'] {
+            --bg-primary: #F8F8F8; /* Very light grey */
+            --text-primary: #212121; /* Near black for strong contrast */
+            --text-secondary: #424242; /* Darker grey for supporting text */
+            --nav-bg: #FFFFFF; /* Pure White for nav */
+            --nav-border: #E0E0E0; /* Light grey border */
+            --section-bg-alt: #F0F0F0; /* Slightly darker light grey for alternate sections */
+            --modal-bg: #FFFFFF;
+            --modal-content-bg: #FAFAFA; /* Slightly off-white for modal content */
+            --input-bg: #EEEEEE; /* Light grey input fields */
+            --input-border: #CCCCCC; /* Medium grey border for inputs */
+            --footer-bg: #EAEAEA; /* Slightly darker light grey for footer */
+            --footer-border: #D0D0D0; /* Medium light grey border for footer */
+            --overlay-opacity: 0.4; /* Adjusted overlay for light mode video */
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .gold-text {
+            color: #D4AF37;
+        }
+        .gold-accent {
+            color: #B08D57;
+        }
+        .gold-bg {
+            background-color: #D4AF37;
+        }
+        .gold-border {
+            border-color: #D4AF37;
+        }
+        .btn-primary {
+            background-color: #D4AF37;
+            color: #121212;
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .btn-primary:hover {
+            background-color: #c09b30;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: #D4AF37;
+            border: 2px solid #D4AF37;
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .btn-secondary:hover {
+            background-color: #D4AF37;
+            color: #121212;
+        }
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem;
+            }
+        }
+        .modal-card {
+            background-color: var(--modal-bg);
+            border: 1px solid #D4AF37;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.1);
+            color: var(--text-primary);
+        }
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        body[data-theme='light'] .modal-overlay {
+             background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: var(--modal-content-bg);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            border: 1px solid #D4AF37;
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+            margin: 2rem auto;
+            color: var(--text-primary);
+        }
+        .modal-close-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: #D4AF37;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        .form-input {
+            background-color: var(--input-bg);
+            border: 1px solid var(--input-border);
+            color: var(--text-primary);
+            border-radius: 0.375rem;
+            padding: 0.75rem 1rem;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .form-input:focus {
+            border-color: #D4AF37;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.5);
+        }
+        .form-textarea {
+            min-height: 120px;
+        }
+        .sr-only {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border-width: 0;
+        }
+        .mobile-menu {
+            display: none;
+            background-color: var(--nav-bg);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            padding: 1rem 0;
+            border-top: 1px solid var(--nav-border);
+            z-index: 999;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+
+        /* Video background styles - Updated for no blur and increased vibrance */
+        .video-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            /* Removed blur, increased saturation */
+            filter: brightness(400%) saturate(200%); /* x2 brightness (400%) and 2x saturation */
+            opacity: 0.38;
+        }
+        body[data-theme='light'] .video-background {
+            opacity: 0.55;
+            /* Removed blur, increased saturation for light mode */
+            filter: brightness(100%) saturate(200%); /* Normal brightness and 2x saturation for light mode */
+        }
+
+        /* Carousel specific styles */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 66.66%;
+            overflow: hidden;
+            border-radius: 0.75rem;
+            border: 2px solid #D4AF37;
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.1);
+        }
+        .carousel-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .carousel-slide.active {
+            opacity: 1;
+        }
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 0.75rem 0.5rem;
+            cursor: pointer;
+            z-index: 10;
+            font-size: 1.5rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.3s ease;
+        }
+        .carousel-button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .carousel-button.prev {
+            left: 1rem;
+        }
+        .carousel-button.next {
+            right: 1rem;
+        }
+        .carousel-dots {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+            z-index: 10;
+        }
+        .carousel-dot {
+            width: 0.75rem;
+            height: 0.75rem;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .carousel-dot.active {
+            background-color: #D4AF37;
+            transform: scale(1.2);
+        }
+
+        /* General Section Backgrounds mapped to CSS variables */
+        .bg-primary-section {
+            background-color: var(--bg-primary);
+        }
+        .bg-alternate-section {
+            background-color: var(--section-bg-alt);
+        }
+        /* Text colors mapped to CSS variables for dynamic theming */
+        .text-primary-color {
+            color: var(--text-primary);
+        }
+        .text-secondary-color {
+            color: var(--text-secondary);
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "ReVyve Wellness Lounge",
+      "description": "Luxury wellness lounge in Lafayette, LA, specializing in IV therapy, hormone optimization, stem cell treatments, peptide therapy, NAD+, and sauna detox.",
+      "image": "https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/logo-revyve-lounge.png",
+      "url": "https://www.revyvewellness.com",
+      "telephone": "+1-337-291-0982",
+      "email": "info@revyvewellness.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3809 Ambassador Caffery Pkwy",
+        "addressLocality": "Lafayette",
+        "addressRegion": "LA",
+        "postalCode": "70503",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "30.182270",
+        "longitude": "-92.067370"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "priceRange": "$$$",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "IV Vitamin Therapy in Lafayette",
+            "description": "Cellular hydration and immune boost with customized IV vitamin drips for optimal health and vitality in Lafayette, LA.",
+            "areaServed": {
+              "@type": "City",
+              "name": "Lafayette"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hormone Optimization in Lafayette",
+            "description": "Personalized male and female hormone therapies for balance, energy, and overall vitality in Lafayette, LA, offered by medical experts.",
+              "areaServed": {
+              "@type": "City",
+              "name": "Lafayette"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Stem Cell & Exosome Therapy Lafayette",
+            "description": "Advanced regenerative treatments for joint pain relief, facial rejuvenation, and longevity at our luxury Lafayette lounge.",
+              "areaServed": {
+              "@type": "City",
+              "name": "Lafayette"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Peptides & NAD+ Therapy Lafayette",
+            "description": "Cutting-edge regenerative anti-aging therapies including NAD+ IV drips and peptide treatments for enhanced cognitive function and cellular repair in Lafayette.",
+              "areaServed": {
+              "@type": "City",
+              "name": "Lafayette"
+            }
+          }
+        },
+          {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sauna & Detox Lounge Lafayette",
+            "description": "Whole-body reset and detoxification in our luxury sauna and detox lounge in Lafayette for ultimate relaxation and cleansing.",
+            "areaServed": {
+              "@type": "City",
+              "name": "Lafayette"
+            }
+          }
+        }
+      ],
+      "sameAs": [
+        "https://instagram.com/revyvewellness",
+        "https://www.facebook.com/revyvewellness", /* Added potential Facebook link */
+        "https://www.yelp.com/biz/revyve-wellness-lounge-lafayette" /* Added potential Yelp link */
+      ],
+      "@id": "https://www.revyvewellness.com"
+    }
+    </script>
+</head>
+<body data-theme="dark">
+
+    <nav class="fixed top-0 left-0 right-0 bg-opacity-90 z-50 shadow-lg py-4" style="background-color: var(--nav-bg); border-bottom: 1px solid var(--nav-border);">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Main Logo - Alt text improved for SEO -->
+            <a href="/" class="flex items-center space-x-2">
+                <img src="https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/logo-revyve-lounge.png" alt="ReVyve Wellness Lounge Official Logo - Luxury IV Therapy & Anti-Aging in Lafayette, LA" class="h-10 w-auto" loading="lazy" decoding="async">
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center">
+                <!-- Navigation links use CSS variables for dynamic coloring -->
+                <a href="#about-us-section" class="text-lg hover:text-gold-text transition-colors duration-200" style="color: var(--text-primary);">About Us</a>
+                <a href="#our-services-section" class="text-lg hover:text-gold-text transition-colors duration-200" style="color: var(--text-primary);">Services</a>
+                <a href="#signature-treatments" class="text-lg hover:text-gold-text transition-colors duration-200" style="color: var(--text-primary);">Treatments</a>
+                <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="text-lg hover:text-gold-text transition-colors duration-200" style="color: var(--text-primary);">Book Consult</a>
+                <a href="#contact-section" class="text-lg hover:text-gold-text transition-colors duration-200" style="color: var(--text-primary);">Contact</a>
+                <!-- Theme Toggle Button for Desktop -->
+                <button id="theme-toggle-desktop" class="text-gold-text focus:outline-none ml-4" aria-label="Toggle light and dark mode">
+                    <!-- Icon path updated dynamically by JavaScript -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3a9 9 0 109 9c0-.46-.03-.92-.1-1.36a5.5 5.5 0 01-10.4-3.53C10.12 6.55 11.02 5.24 12 3z"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <div class="md:hidden flex items-center">
+                <button id="theme-toggle-mobile" class="text-gold-text focus:outline-none mr-4" aria-label="Toggle light and dark mode">
+                    <!-- Icon path updated dynamically by JavaScript -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3a9 9 0 109 9c0-.46-.03-.92-.1-1.36a5.5 5.5 0 01-10.4-3.53C10.12 6.55 11.02 5.24 12 3z"></path>
+                    </svg>
+                </button>
+                <button id="mobile-menu-button" class="text-gold-text focus:outline-none" aria-label="Open mobile menu" aria-expanded="false">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu md:hidden">
+            <div class="flex flex-col items-center space-y-4 py-4">
+                <!-- Mobile navigation links use CSS variables for dynamic coloring -->
+                <a href="#about-us-section" class="text-lg hover:text-gold-text transition-colors duration-200" onclick="closeMobileMenu()" style="color: var(--text-primary);">About Us</a>
+                <a href="#our-services-section" class="text-lg hover:text-gold-text transition-colors duration-200" onclick="closeMobileMenu()" style="color: var(--text-primary);">Services</a>
+                <a href="#signature-treatments" class="text-lg hover:text-gold-text transition-colors duration-200" onclick="closeMobileMenu()" style="color: var(--text-primary);">Treatments</a>
+                <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="text-lg hover:text-gold-text transition-colors duration-200" onclick="closeMobileMenu()" style="color: var(--text-primary);">Book Consult</a>
+                <a href="#contact-section" class="text-lg hover:text-gold-text transition-colors duration-200" onclick="closeMobileMenu()" style="color: var(--text-primary);">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center justify-center overflow-hidden section-padding pt-24 md:pt-32">
+        <div class="absolute inset-0 z-0">
+            <!-- Video background with blur and opacity (reverted to original opacity in dark mode) -->
+            <video autoplay loop muted playsinline class="video-background" poster="https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/Screenshot%202025-06-20%20074754.png" preload="none">
+                <source src="https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/hero-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Overlay uses CSS variable for dynamic theming -->
+            <div class="absolute inset-0" style="background-color: var(--nav-bg); opacity: var(--overlay-opacity);"></div>
+        </div>
+
+        <div class="relative z-10 text-center p-6 md:p-12 max-w-4xl mx-auto">
+            <!-- SEO: H1 with strong keywords -->
+            <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold gold-text mb-6 leading-tight animate-fade-in-down">
+                Science-Backed. <span class="block md:inline">Luxury-Inspired.</span> You, ReVyved.
+            </h1>
+            <!-- Engagement & SEO: Compelling subheading with key services highlighted -->
+            <p class="text-lg sm:text-xl md:text-2xl mb-10 max-w-3xl mx-auto animate-fade-in" style="color: var(--text-primary);">
+                Lafayette's Premier <span class="font-semibold">Hormone Optimization</span> • <span class="font-semibold">IV Therapy</span> • <span class="font-semibold">Weight Loss</span> • <span class="font-semibold">Stem Cell & Regenerative Treatments</span>.
+                <span class="block mt-2 text-gold-accent font-semibold">Transform Your Health. Transform Your Life.</span>
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-6 flex flex-col sm:flex-row justify-center animate-fade-in-up">
+                <!-- Engagement: Clear call-to-action buttons -->
+                <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="btn-primary inline-block text-base md:text-lg shadow-gold-md hover:shadow-gold-lg">
+                    Book Your Free Wellness Consult Today!
+                </a>
+                <a href="#signature-treatments" class="btn-secondary inline-block text-base md:text-lg">
+                    Explore Our Transformative Treatments
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding" style="background-color: var(--section-bg-alt);">
+        <div class="container mx-auto px-4">
+            <!-- SEO: Benefit-driven heading -->
+            <h2 class="font-serif text-3xl md:text-4xl gold-text text-center mb-10">Why Choose ReVyve Wellness Lounge for Your Wellness Journey?</h2>
+            <!-- Engagement: Concise introductory paragraph -->
+            <p class="text-lg text-center mb-12 max-w-3xl mx-auto" style="color: var(--text-secondary);">
+                At ReVyve, your well-being is our priority. We combine advanced medical expertise with a luxurious, patient-focused approach to deliver unparalleled results in Lafayette, LA.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-start mb-12 text-center">
+                <div class="flex flex-col items-center p-4">
+                    <svg class="w-12 h-12 gold-text mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    <h3 class="text-xl font-semibold gold-text">Medically Licensed & Certified Care</h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Our advanced treatments are performed by fully certified and medically licensed professionals, ensuring your safety and optimal health outcomes in Lafayette.</p>
+                </div>
+                <div class="flex flex-col items-center p-4">
+                    <svg class="w-12 h-12 gold-text mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <h3 class="text-xl font-semibold gold-text">Exclusive FDA-Registered Products</h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">We exclusively use the highest quality, safe, and effective FDA-registered products, providing you with complete peace of mind and superior, lasting results.</p>
+                </div>
+                <div class="flex flex-col items-center p-4">
+                    <svg class="w-12 h-12 gold-text mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <h3 class="text-xl font-semibold gold-text">Expert Physician Oversight & Personalization</h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">All our wellness and anti-aging treatments are meticulously supervised by experienced physicians, ensuring personalized care tailored to your unique needs.</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h2 class="font-serif text-3xl md:text-4xl gold-text mb-8">Hear From Our Revitalized Clients in Lafayette</h2>
+                <div class="relative overflow-hidden max-w-2xl mx-auto p-6 rounded-lg shadow-xl border border-gold-border" style="background-color: var(--modal-content-bg);">
+                    <div class="testimonial-item">
+                        <blockquote class="text-xl italic mb-4" style="color: var(--text-primary);">
+                            <p>“After just one NAD+ session at ReVyve in Lafayette, my brain fog disappeared. I feel sharper and more focused than ever. It's truly incredible! Highly recommend this wellness lounge.”</p>
+                        </blockquote>
+                        <cite class="font-semibold gold-accent not-italic">- Marie B., Lafayette, LA</cite>
+                        <br>
+                        <blockquote class="text-xl italic mt-6 mb-4" style="color: var(--text-primary);">
+                            <p>“The hormone optimization program at ReVyve has been life-changing. I have more energy and feel like myself again. Truly grateful for the personalized care and anti-aging expertise!”</p>
+                        </blockquote>
+                        <cite class="font-semibold gold-accent not-italic">- David L., Carencro, LA</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us-section" class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container mx-auto px-4 text-center">
+            <!-- Engagement & SEO: Clear, action-oriented heading -->
+            <h2 class="font-serif text-3xl md:text-4xl gold-text mb-8">Begin Your Journey to Optimal Wellness & Longevity in Lafayette</h2>
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed" style="color: var(--text-secondary);">
+                <p class="mb-4">
+                    ReVyve Wellness Lounge is Lafayette, LA's premier destination for luxury <span class="font-semibold">IV therapy</span>, <span class="font-semibold">hormone optimization</span>, cutting-edge <span class="font-semibold">stem cell treatments</span>, and advanced <span class="font-semibold">anti-aging solutions</span>. We are dedicated to helping you achieve optimal health and vitality through science-backed, personalized wellness plans designed just for you.
+                </p>
+                <p>
+                    Our state-of-the-art lounge provides a serene and opulent environment where you can relax and rejuvenate. Our team of medically licensed professionals and top-tier physicians ensures every treatment is safe, effective, and tailored to your unique needs, guiding you on a path to true revitalization. Experience the future of wellness today!
+                </p>
+                <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="btn-primary mt-8 inline-block">Schedule Your Transformative Consult Now!</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="signature-treatments" class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container mx-auto px-4">
+            <!-- SEO: Keyword-rich heading -->
+            <h2 class="font-serif text-3xl md:text-4xl gold-text text-center mb-12">Explore ReVyve's Signature IV Therapy & Regenerative Treatments</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="modal-card p-6 text-center transform hover:scale-105 transition-transform duration-300 cursor-pointer" onclick="openModal('modal-iv-therapy')" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-iv-therapy">
+                    <img src="https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/icon-iv-therapy.webp" alt="IV Vitamin Drip Therapy Icon - Lafayette, LA" class="mx-auto h-20 w-auto mb-4" loading="lazy" decoding="async">
+                    <h3 class="text-2xl font-semibold gold-text mb-3">
+                        IV Vitamin Therapy
+                    </h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Unlock deep cellular hydration & immune boost for peak wellness and energy.</p>
+                </div>
+                <div class="modal-card p-6 text-center transform hover:scale-105 transition-transform duration-300 cursor-pointer" onclick="openModal('modal-hormone')" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-hormone">
+                    <img src="https://placehold.co/80x80/D4AF37/121212?text=Hormone" alt="Hormone Optimization Therapy Icon in Lafayette" class="mx-auto h-20 w-auto mb-4" loading="lazy" decoding="async">
+                    <h3 class="text-2xl font-semibold gold-text mb-3">
+                        Hormone Optimization
+                    </h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Restore hormonal balance and vitality with personalized male and female therapies.</p>
+                </div>
+                <div class="modal-card p-6 text-center transform hover:scale-105 transition-transform duration-300 cursor-pointer" onclick="openModal('modal-stem-cell')" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-stem-cell">
+                    <img src="https://placehold.co/80x80/D4AF37/121212?text=StemCell" alt="Stem Cell & Exosome Regenerative Therapy Icon" class="mx-auto h-20 w-auto mb-4" loading="lazy" decoding="async">
+                    <h3 class="text-2xl font-semibold gold-text mb-3">
+                            Stem Cell & Exosome
+                    </h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Experience advanced natural healing & rejuvenation for joint and aesthetic concerns.</p>
+                </div>
+                <div class="modal-card p-6 text-center transform hover:scale-105 transition-transform duration-300 cursor-pointer" onclick="openModal('modal-peptides')" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-peptides">
+                    <img src="https://placehold.co/80x80/D4AF37/121212?text=NAD+" alt="Peptide & NAD+ IV Therapy Icon" class="mx-auto h-20 w-auto mb-4" loading="lazy" decoding="async">
+                    <h3 class="text-2xl font-semibold gold-text mb-3">
+                        Peptides & NAD+
+                    </h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Boost cellular repair, cognitive function, and anti-aging at a molecular level.</p>
+                </div>
+                <div class="modal-card p-6 text-center transform hover:scale-105 transition-transform duration-300 cursor-pointer" onclick="openModal('modal-sauna')" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-sauna">
+                    <img src="https://placehold.co/80x80/D4AF37/121212?text=Sauna" alt="Luxury Sauna & Detox Lounge Icon" class="mx-auto h-20 w-auto mb-4" loading="lazy" decoding="async">
+                    <h3 class="text-2xl font-semibold gold-text mb-3">
+                        Sauna & Detox Lounge
+                    </h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Indulge in a serene full-body reset, promoting detoxification and relaxation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-services-section" class="section-padding" style="background-color: var(--section-bg-alt);">
+        <div class="container mx-auto px-4">
+            <!-- SEO: Focus on "comprehensive services" and "holistic well-being" -->
+            <h2 class="font-serif text-3xl md:text-4xl gold-text mb-8">Your Path to Holistic Well-being: Our Comprehensive Wellness Services</h2>
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed" style="color: var(--text-secondary);">
+                <p class="mb-4">
+                    At ReVyve Wellness Lounge in Lafayette, we offer a broad spectrum of advanced wellness and anti-aging services designed to meet your individual needs. Beyond our signature <a href="#signature-treatments" class="gold-text hover:underline">treatments</a>, we focus on a holistic approach to health, integrating various therapies for maximum benefit and lasting vitality.
+                </p>
+                <p>
+                    Our comprehensive services include detailed diagnostic testing, personalized wellness plans, and ongoing support to ensure you achieve lasting results. Whether you're looking for preventative care, peak performance enhancement, or effective age management solutions, our experts are here to guide you to a more vibrant and fulfilling life.
+                </p>
+                <a href="#signature-treatments" class="btn-secondary mt-8 inline-block">Explore All Our Advanced Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals (details and text content are optimized below) -->
+    <div id="modal-iv-therapy" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-iv-therapy-title" tabindex="-1">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeModal('modal-iv-therapy')" aria-label="Close IV Vitamin Therapy details">×</button>
+            <h3 id="modal-iv-therapy-title" class="text-2xl font-semibold gold-text mb-4">IV Vitamin Therapy for Enhanced Wellness in Lafayette</h3>
+            <p class="mb-2" style="color: var(--text-primary);">Experience rapid nutrient absorption and deep cellular hydration with our custom <span class="font-semibold">IV drips</span>. Perfect for boosting immunity, energy levels, and overall cellular health right here in Lafayette, LA. Feel the transformative difference with deep cellular revitalization!</p>
+            <ul class="list-disc list-inside mb-4" style="color: var(--text-secondary);">
+                <li>**Immune Boost Drip**: Fortify your defenses against illness and enhance your body's natural resilience. Ideal for seasonal wellness and recovery.</li>
+                <li>**Energy & Performance Drip**: Recharge your vitality, improve athletic performance, and effectively combat fatigue. Perfect for athletes and busy professionals.</li>
+                <li>**Hydration & Recovery Drip**: Rapidly rehydrate your system, replenish essential electrolytes, and accelerate post-activity or illness recovery.</li>
+                <li>**Anti-Aging & Beauty Drip**: Promote glowing skin, strengthen hair and nails, and achieve a youthful appearance from within with vital nutrients.</li>
+            </ul>
+            <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="btn-primary mt-4 inline-block" onclick="closeModal('modal-iv-therapy');">Book Your IV Therapy Consult Today!</a>
+        </div>
+    </div>
+    <div id="modal-hormone" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-hormone-title" tabindex="-1">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeModal('modal-hormone')" aria-label="Close Hormone Optimization details">×</button>
+            <h3 id="modal-hormone-title" class="text-2xl font-semibold gold-text mb-4">Personalized Hormone Optimization in Lafayette, LA</h3>
+            <p class="mb-2" style="color: var(--text-primary);">Restore balance and vitality with our physician-supervised <span class="font-semibold">hormone replacement therapies</span> for both men and women. Address symptoms of aging, chronic fatigue, and hormonal imbalances with expert care in Lafayette. Reclaim your vigor, mental clarity, and overall well-being!</p>
+             <ul class="list-disc list-inside mb-4" style="color: var(--text-secondary);">
+                <li>**Bioidentical Hormone Replacement Therapy (BHRT)**: Naturally balance your hormones using compounds identical to your body's own, optimizing health and wellness.</li>
+                <li>**Testosterone Replacement Therapy (TRT)**: Boost energy levels, improve mood, enhance physical performance, and restore libido for men.</li>
+                <li>**Comprehensive Hormone Panel Testing**: Understand your unique hormonal profile through advanced diagnostic testing for precise, personalized treatment plans.</li>
+            </ul>
+            <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="btn-primary mt-4 inline-block" onclick="closeModal('modal-hormone');">Schedule Your Hormone Consult Now!</a>
+        </div>
+    </div>
+    <div id="modal-stem-cell" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-stem-cell-title" tabindex="-1">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeModal('modal-stem-cell')" aria-label="Close Stem Cell & Exosome Therapy details">×</button>
+            <h3 id="modal-stem-cell-title" class="text-2xl font-semibold gold-text mb-4">Advanced Stem Cell & Exosome Therapy in Lafayette</h3>
+            <p class="mb-2" style="color: var(--text-primary);">Harness the power of regenerative medicine at ReVyve. Our <span class="font-semibold">stem cell and exosome therapies</span> promote deep healing and rejuvenation for joints, aesthetic concerns, and overall longevity. Experience revolutionary natural healing right here in Lafayette!</p>
+             <ul class="list-disc list-inside mb-4" style="color: var(--text-secondary);">
+                <li>**Joint Pain Relief**: Reduce discomfort, inflammation, and improve mobility naturally with targeted regenerative injections.</li>
+                <li>**Facial Rejuvenation**: Achieve a radiant, youthful complexion by stimulating natural collagen and elastin production for improved skin texture.</li>
+                <li>**Hair Restoration**: Stimulate natural hair growth and increase density for a fuller, healthier head of hair.</li>
+                <li>**Systemic Regeneration**: Support cellular repair and combat aging at a fundamental level throughout your body for enhanced vitality and overall wellness.</li>
+            </ul>
+            <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="btn-primary mt-4 inline-block" onclick="closeModal('modal-stem-cell');">Book Your Regenerative Therapy Consult!</a>
+        </div>
+    </div>
+    <div id="modal-peptides" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-peptides-title" tabindex="-1">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeModal('modal-peptides')" aria-label="Close Peptides & NAD+ details">×</button>
+            <h3 id="modal-peptides-title" class="text-2xl font-semibold gold-text mb-4">Peptides & NAD+ Infusions in Lafayette, LA</h3>
+            <p class="mb-2" style="color: var(--text-primary);">Unlock your body's full potential with targeted <span class="font-semibold">peptide therapies</span> and cutting-edge <span class="font-semibold">NAD+ infusions</span>. Enhance cellular repair, cognitive function, and actively slow the aging process at a molecular level with our Lafayette experts. Discover unparalleled vitality and performance!</p>
+            <ul class="list-disc list-inside mb-4" style="color: var(--text-secondary);">
+                <li>**NAD+ IV Therapy for Brain Health & Energy**: Sharpen focus, enhance mental clarity, elevate your mood, and significantly boost your cellular energy levels.</li>
+                <li>**Peptides for Muscle Growth & Recovery**: Optimize your fitness journey, accelerate muscle repair, and dramatically reduce recovery time after workouts.</li>
+                <li>**Peptides for Anti-Aging & Skin Health**: Reverse visible signs of aging, improve skin elasticity and hydration, and achieve a radiant, youthful complexion.</li>
+                <li>**Peptides for Weight Management**: Support healthy metabolism, reduce cravings, and optimize body composition for sustainable weight loss.</li>
+            </ul>
+            <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="btn-primary mt-4 inline-block" onclick="closeModal('modal-peptides');">Unlock Your Potential – Book Now!</a>
+        </div>
+    </div>
+    <div id="modal-sauna" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-sauna-title" tabindex="-1">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeModal('modal-sauna')" aria-label="Close Sauna & Detox Lounge details">×</button>
+            <h3 id="modal-sauna-title" class="text-2xl font-semibold gold-text mb-4">Luxury Sauna & Detox Lounge in Lafayette</h3>
+            <p class="mb-2" style="color: var(--text-primary);">Relax, rejuvenate, and deeply detoxify in our state-of-the-art <span class="font-semibold">sauna and detox lounge</span>. Promote circulation, reduce stress, and powerfully support your body's natural cleansing processes. Experience ultimate relaxation and renewal right here in Lafayette!</p>
+            <ul class="list-disc list-inside mb-4" style="color: var(--text-secondary);">
+                <li>**Infrared Sauna Sessions**: Achieve deep detoxification, profound muscle relaxation, and improved cardiovascular health with advanced infrared technology.</li>
+                <li>**Lymphatic Drainage Support**: Enhance your body's natural cleansing system for improved waste removal and reduced fluid retention.</li>
+                <li>**Relaxation and Stress Reduction**: Find unparalleled tranquility, mental calm, and a deep sense of well-being through therapeutic heat.</li>
+            </ul>
+            <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="btn-primary mt-4 inline-block" onclick="closeModal('modal-sauna');">Book Your Detox Session Today!</a>
+        </div>
+    </div >
+
+
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="md:w-1/2 w-full">
+                    <div class="carousel-container">
+                        <div id="revyve-carousel" class="w-full h-full">
+                            <!-- Carousel slides will be injected here by JavaScript -->
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image">
+                            &#10094;
+                        </button>
+                        <button class="carousel-button next" aria-label="Next image">
+                            &#10095;
+                        </button>
+                        <div class="carousel-dots" id="carousel-dots-container">
+                            <!-- Carousel dots will be injected here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full text-center md:text-left">
+                    <!-- Engagement & SEO: Strong, inviting heading -->
+                    <h2 class="font-serif text-3xl md:text-4xl gold-text mb-6">Step Into the Luxurious ReVyve Experience in Lafayette, LA</h2>
+                    <p class="text-lg leading-relaxed" style="color: var(--text-secondary);">
+                        From our luxurious <span class="font-semibold">IV lounge</span> to science-based diagnostics, every ReVyve visit delivers total wellness restoration. We blend cutting-edge treatments with a serene, opulent environment in the heart of Lafayette, LA, to ensure you leave feeling revitalized and empowered. Transform your health in comfort and style.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--section-bg-alt);">
+        <div class="container mx-auto px-4">
+            <!-- SEO: Benefit-focused heading -->
+            <h2 class="font-serif text-3xl md:text-4xl gold-text mb-12">Experience the Unmatched Benefits of ReVyve's Advanced Therapies</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="flex flex-col items-center p-4">
+                    <div class="text-4xl gold-text mb-3" aria-hidden="true">💧</div>
+                    <h3 class="text-xl font-semibold mb-1" style="color: var(--text-primary);">Deep Cellular Hydration</h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Feel refreshed and energized as your cells are optimally nourished, enhancing overall bodily functions and vitality.</p>
+                </div>
+                <div class="flex flex-col items-center p-4">
+                    <div class="text-4xl gold-text mb-3" aria-hidden="true">⚡</div>
+                    <h3 class="text-xl font-semibold mb-1" style="color: var(--text-primary);">Boost Your Energy & Recovery</h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Overcome chronic fatigue, accelerate post-exercise recovery, and sustain peak mental and physical performance.</p>
+                </div>
+                <div class="flex flex-col items-center p-4">
+                    <div class="text-4xl gold-text mb-3" aria-hidden="true">🛡️</div>
+                    <h3 class="text-xl font-semibold mb-1" style="color: var(--text-primary);">Fortify Immune Function</h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Strengthen your body's natural defenses, helping you stay healthier and more resilient against illness and environmental stressors.</p>
+                </div>
+                <div class="flex flex-col items-center p-4">
+                    <div class="text-4xl gold-text mb-3" aria-hidden="true">🌿</div>
+                    <h3 class="text-xl font-semibold mb-1" style="color: var(--text-primary);">Youthful Vitality & Detox</h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Cleanse your system of accumulated toxins and unlock your natural anti-aging potential for a vibrant look and feel, inside and out.</p>
+                </div>
+                <div class="flex flex-col items-center p-4">
+                    <div class="text-4xl gold-text mb-3" aria-hidden="true">🧠</div>
+                    <h3 class="text-xl font-semibold mb-1" style="color: var(--text-primary);">Sharpen Mental Clarity with NAD+</h3>
+                    <p class="text-sm" style="color: var(--text-secondary);">Enhance focus, elevate your mood, and boost overall cognitive performance for improved daily function and productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking-form" class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto text-center">
+                <!-- Engagement: Urgent and benefit-driven CTA heading -->
+                <h2 class="font-serif text-3xl md:text-4xl gold-text mb-6">Ready to ReVyve Your Body & Mind? Don't Miss Out on Optimal Health!</h2>
+                <p class="text-lg mb-8" style="color: var(--text-secondary);">
+                    Take the first pivotal step towards a revitalized you. Click the button below to request your complimentary wellness consultation at our luxurious Lafayette lounge. Limited slots available – secure your transformation today!
+                </p>
+                <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="btn-primary w-full text-lg">
+                    Request Your Free Consult Now!
+                </a>
+                <p class="text-xs mt-2" style="color: var(--text-secondary);">You will be securely redirected to Zocdoc to complete your booking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section" class="section-padding" style="background-color: var(--section-bg-alt);">
+        <div class="container mx-auto px-4">
+            <!-- SEO: Location-specific heading -->
+            <h2 class="font-serif text-3xl md:text-4xl gold-text text-center mb-12">Visit ReVyve Wellness Lounge in Lafayette, LA</h2>
+            <div class="flex flex-col lg:flex-row gap-8 md:gap-12">
+                <div class="lg:w-2/3 w-full h-96 md:h-[500px] rounded-lg overflow-hidden border-2 border-gold-border">
+                    <!-- Google Maps embed iframe - Title improved for accessibility & SEO -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.004110688647!2d-92.067370!3d30.182270!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86249a5b3a4a9c6b%3A0x6e7b1c3c9b7e7c8!2s3809%20Ambassador%20Caffery%20Pkwy%2C%20Lafayette%2C%20LA%2070503%2C%20USA!5e0!3m2!1sen!2sus!4v1718889378123!5m2!1sen!2sus"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Interactive Google Map of ReVyve Wellness Lounge location at 3809 Ambassador Caffery Pkwy, Lafayette, LA 70503">
+                    </iframe>
+                </div>
+                <div class="lg:w-1/3 w-full flex flex-col justify-center text-center lg:text-left">
+                    <h3 class="font-serif text-2xl gold-text mb-4">Our Location & Hours</h3>
+                    <address class="not-italic mb-4 text-lg" style="color: var(--text-secondary);">
+                        <strong class="gold-accent">ReVyve Wellness Lounge</strong><br>
+                        📍 3809 Ambassador Caffery Pkwy<br>
+                        Lafayette, LA 70503
+                    </address>
+                    <div class="mb-4">
+                        <h4 class="text-xl font-semibold gold-text mb-1">Get In Touch</h4>
+                        <p class="text-lg" style="color: var(--text-secondary);">📞 Phone: <a href="tel:+13372910982" class="hover:text-gold-accent">337-291-0982</a></p>
+                        <p class="text-lg" style="color: var(--text-secondary);">📧 Email: <a href="mailto:info@revyvewellness.com" class="hover:text-gold-accent">info@revyvewellness.com</a></p>
+                        <p class="text-lg" style="color: var(--text-secondary);">💻 Website: <a href="https://www.revyvewellness.com" target="_blank" rel="noopener noreferrer" class="hover:text-gold-accent">www.revyvewellness.com</a></p>
+                    </div>
+                    <div class="mb-4">
+                            <h4 class="text-xl font-semibold gold-text mb-1">Hours</h4>
+                           <p class="text-lg" style="color: var(--text-secondary);">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                           <p class="text-lg" style="color: var(--text-secondary);">Saturday - Sunday: By Appointment</p>
+                    </div>
+                       <a href="https://www.google.com/maps/dir/?api=1&destination=3809+Ambassador+Caffery+Pkwy,+Lafayette,+LA+70503" target="_blank" rel="noopener noreferrer" class="btn-primary mt-4 self-center lg:self-start">
+                        Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t py-8" style="background-color: var(--footer-bg); border-color: var(--footer-border);">
+        <div class="container mx-auto px-4 text-center" style="color: var(--text-secondary);">
+            <div class="mb-4">
+                <a href="#about-us-section" class="px-3 hover:text-gold-text">About Us</a>
+                <span class="gold-text">|</span>
+                <a href="#our-services-section" class="px-3 hover:text-gold-text">Our Services</a>
+                <span class="gold-text">|</span>
+                <a href="https://www.zocdoc.com/practice/revyve-wellness-135421?lock=true&isNewPatient=false&referrerType=widget" target="_blank" rel="noopener noreferrer" class="px-3 hover:text-gold-text">Book Now</a>
+                <span class="gold-text">|</span>
+                <a href="/privacy-policy" class="px-3 hover:text-gold-text">Privacy Policy</a>
+                <span class="gold-text">|</span>
+                <a href="https://instagram.com/revyvewellness" target="_blank" rel="noopener noreferrer" class="px-3 hover:text-gold-text">Instagram</a>
+                <!-- SEO: Added potential social links for local SEO -->
+                <a href="https://www.facebook.com/revyvewellness" target="_blank" rel="noopener noreferrer" class="px-3 hover:text-gold-text">Facebook</a>
+                <a href="https://www.yelp.com/biz/revyve-wellness-lounge-lafayette" target="_blank" rel="noopener noreferrer" class="px-3 hover:text-gold-text">Yelp</a>
+            </div>
+            <p>Copyright © <span id="current-year">2025</span> ReVyve Wellness Lounge. All Rights Reserved.</p>
+            <p class="text-xs mt-2">Serving Lafayette, LA and surrounding areas with luxury wellness and anti-aging solutions.</p>
+            <p class="text-xs mt-1">Medical services provided by licensed professionals. Results may vary.</p> <!-- Added disclaimer for clarity -->
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('active');
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+        }
+
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+        // Basic JavaScript for Modal functionality
+        let previouslyFocusedElement;
+
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                previouslyFocusedElement = document.activeElement;
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+                
+                const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                if (focusableElements.length > 0) {
+                    focusableElements[0].focus();
+                }
+                
+                const trigger = document.querySelector(`[aria-controls="${modalId}"]`);
+                if(trigger) trigger.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                
+                const trigger = document.querySelector(`[aria-controls="${modalId}"]`);
+                if(trigger) trigger.setAttribute('aria-expanded', 'false');
+
+                if (previouslyFocusedElement) {
+                    previouslyFocusedElement.focus();
+                }
+            }
+        }
+
+        window.addEventListener('click', function(event) {
+            document.querySelectorAll('.modal-overlay').forEach(modal => {
+                if (event.target == modal) {
+                    closeModal(modal.id);
+                }
+            });
+        });
+
+        window.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay').forEach(modal => {
+                    if (modal.style.display === 'flex') {
+                        closeModal(modal.id);
+                    }
+                });
+            }
+        });
+        
+        document.querySelectorAll('.modal-card[role="button"]').forEach(card => {
+            card.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    this.click();
+                }
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Carousel Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = [
+                "https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/ReVyve-Lafayette.jpg",
+                "https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/ReVyve-Lafayette%201.jpg",
+                "https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/ReVyve-Lafayette%202.jpg",
+                "https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/ReVyve-Lafayette%203.jpg",
+                "https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/ReVyve-Lafayette%205.jpg",
+                "https://pub-23f7e1f517734fc09a3807185400d484.r2.dev/ReVyve-Lafayette%206.jpg"
+            ];
+            let currentSlide = 0;
+            const carouselElement = document.getElementById('revyve-carousel');
+            const dotsContainer = document.getElementById('carousel-dots-container');
+            const prevButton = document.querySelector('.carousel-button.prev');
+            const nextButton = document.querySelector('.carousel-button.next');
+
+            function renderCarousel() {
+                carouselElement.innerHTML = '';
+                dotsContainer.innerHTML = '';
+
+                images.forEach((src, index) => {
+                    const slideDiv = document.createElement('div');
+                    slideDiv.className = 'carousel-slide';
+                    if (index === currentSlide) {
+                        slideDiv.classList.add('active');
+                    }
+                    const img = document.createElement('img');
+                    img.src = src;
+                    // SEO: Enhanced alt text for carousel images
+                    img.alt = `Interior view of ReVyve Wellness Lounge in Lafayette, Louisiana showing luxury treatment area - Image ${index + 1}`;
+                    slideDiv.appendChild(img);
+                    carouselElement.appendChild(slideDiv);
+
+                    const dot = document.createElement('span');
+                    dot.className = 'carousel-dot';
+                    if (index === currentSlide) {
+                        dot.classList.add('active');
+                    }
+                    dot.addEventListener('click', () => goToSlide(index));
+                    dotsContainer.appendChild(dot);
+                });
+            }
+
+            function goToSlide(index) {
+                currentSlide = (index + images.length) % images.length;
+                renderCarousel();
+            }
+
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
+            }
+
+            function prevSlide() {
+                goToSlide(currentSlide - 1);
+            }
+
+            prevButton.addEventListener('click', prevSlide);
+            nextButton.addEventListener('click', nextSlide);
+
+            setInterval(nextSlide, 5000); // Auto-play carousel
+
+            renderCarousel(); // Initial render
+        });
+
+        // Theme Toggle Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            const themeToggleDesktop = document.getElementById('theme-toggle-desktop');
+            const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+
+            function setTheme(theme) {
+                body.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                updateToggleButtonIcon(theme);
+            }
+
+            function updateToggleButtonIcon(theme) {
+                const iconPath = theme === 'light' ?
+                    'M20 12.91V12a8 8 0 00-13.88-5.65.5.5 0 01-.15-.35V5a.5.5 0 01.15-.35A8 8 0 0012 4a8 8 0 008 8 .5.5 0 010 .91z' : // Moon icon
+                    'M12 3a9 9 0 109 9c0-.46-.03-.92-.1-1.36a5.5 5.5 0 01-10.4-3.53C10.12 6.55 11.02 5.24 12 3z'; // Sun icon
+
+                if (themeToggleDesktop) {
+                    themeToggleDesktop.querySelector('svg path').setAttribute('d', iconPath);
+                }
+                if (themeToggleMobile) {
+                    themeToggleMobile.querySelector('svg path').setAttribute('d', iconPath);
+                }
+            }
+
+            function toggleTheme() {
+                const currentTheme = body.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+            }
+
+            if (themeToggleDesktop) {
+                themeToggleDesktop.addEventListener('click', toggleTheme);
+            }
+            if (themeToggleMobile) {
+                themeToggleMobile.addEventListener('click', toggleTheme);
+            }
+
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            setTheme(savedTheme);
+        });
+    </script>
+
+</body>
+</html>
